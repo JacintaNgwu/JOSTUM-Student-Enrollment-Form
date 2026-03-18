@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSTUM Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Image/JoSTUM.png" alt="JOSTUM Logo" class="logo">
+        <h1>
+            JOSEPH SARWUAN TARKA UNIVERSITY, MAKURDI, BENUE STATE, NIGERIA. <span class="motto">Innovation and Service</span>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="form-header">STUDENT ENROLLMENT FORM</div>
+        <div class="container">
+        <form>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" required>
+                </div>
+
+                <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+                </div>
+
+                <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone">
+                </div>
+
+                <div class="form-group">
+                <label for="photo">Profile Photo Upload</label>
+                <input type="file" id="photo">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                <label for="course">Preferred Course</label>
+                <select id="course">
+                    <optgroup label="Biological Science">
+                    <option>Microbiology</option>
+                    <option>Botany</option>
+                    <option>Biochemistry</option>
+                    <option>Zoology</option>
+                    </optgroup>
+
+                    <optgroup label="Agriculture">
+                        <option>Crop Production</option>
+                        <option>Forestry</option>
+                        <option>Animal Husbandry</option>
+                        <option>Fishing</option>
+                    </optgroup>
+
+                    <optgroup label="Business">
+                    <option>Accounting</option>
+                    <option>Marketing</option>
+                    <option>Banking/Financing</option>
+                    <option>Entrepreneurship</option>
+                    </optgroup>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message / Notes</label>
+                <textarea id="message" rows="5"></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
